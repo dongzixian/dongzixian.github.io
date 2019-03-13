@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="��μ���math��import math
+���ʹ��math���еĺ���
+�ں�����ǰ��math.(����)
+����ڼ��غ���ʱ����Ϊimport math as m�������m.(����)�����ú�������
+pi&amp;gt;&amp;gt;&amp;gt; math.pi&amp;">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="dongzixian">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="python�µ�math��׼��">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="��μ���math��import math
+���ʹ��math���еĺ���
+�ں�����ǰ��math.(����)
+����ڼ��غ���ʱ����Ϊimport math as m�������m.(����)�����ú�������
+pi&amp;gt;&amp;gt;&amp;gt; math.pi&amp;">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="dongzixian">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://yoursite.comhttps://raw.githubusercontent.com/dongzixian/dongzixian/master/timg.jpg">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="http://yoursite.comhttps://raw.githubusercontent.com/dongzixian/dongzixian/master/timg.jpg">
+    
+
+    <!-- Title -->
+    
+    <title>python�µ�math��׼�� - dongzixian</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tegs
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('https://raw.githubusercontent.com/dongzixian/dongzixian/master/timg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>python�µ�math��׼��</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-03-13
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="��μ���math��"><a href="#��μ���math��" class="headerlink" title="��μ���math��"></a>��μ���math��</h1><p><code>import math</code></p>
+<h1 id="���ʹ��math���еl���"><a href="#���ʹ��math���еl���" class="headerlink" title="���ʹ��math���еĺ���"></a>���ʹ��math���еĺ���</h1><ul>
+<li>�ں�����ǰ��math.(����)</li>
+<li>����ڼ��غ���ʱ����Ϊ<code>import math as m</code>�������m.(����)�����ú���<h1 id="����"><a href="#����" class="headerlink" title="����"></a>����</h1></li>
+<li>pi<br><code>&gt;&gt;&gt; math.pi</code><br><code>&gt;&gt;&gt;3.141592653589793</code></li>
+<li>e<br><code>&gt;&gt;&gt; math.e</code><br><code>&gt;&gt;&gt;2.718281828459045</code> <h1 id="һ�㺯��"><a href="#һ�㺯��" class="headerlink" title="һ�㺯��"></a>һ�㺯��</h1></li>
+<li>ceil(x):����:����һ����������,����������ȡ��.<br><code>&gt;&gt;&gt;math.ceil(5.21)</code><br><code>&gt;&gt;&gt;6.0</code></li>
+<li>copysign(x, y):����:�������x,x�ķ������Ժ����yһ��.<br><code>&gt;&gt;&gt;math.copysign(4,-1)</code><br><code>&gt;&gt;&gt;-4.0</code></li>
+<li>fabs(x):����:�������x�ľ���ֵ.<br><code>&gt;&gt;&gt;math.fabs(-2)</code><br><code>&gt;&gt;&gt;2.0</code></li>
+<li>factorial(x):����:����x�Ľ׳�.<br><code>&gt;&gt;&gt;math.factorial(5)</code><br><code>&gt;&gt;&gt;120</code></li>
+<li><p>floor(x):����:����һ����������,����������ȡ��.<br><code>&gt;&gt;&gt;math.floor(6.12)</code><br><code>&gt;&gt;&gt;6.0</code></p>
+</li>
+<li><p>fmod(x, y):����:ȡģ����,��ͬx%y,ע�����ʽ�ķ��ſ�����x.<br><code>&gt;&gt;&gt;math.fmod(3,2)</code><br><code>&gt;&gt;&gt;1.0</code></p>
+</li>
+<li><p>frexp(x):����:Ч����ͬ��ʽx=m*2**e ���ض�Ԫ����(m,e).<br><code>&gt;&gt;&gt;math.frexp(8)</code><br><code>&gt;&gt;&gt;(0.5,4)</code></p>
+</li>
+<li><p>fsum(iterable):����:�����б��ڲ���������Ԫ��֮��.���ظ�������.<br><code>&gt;&gt;&gt;f = [1,2.0,3.1]</code><br><code>&gt;&gt;&gt;math.fsum(f)</code><br><code>&gt;&gt;&gt;6.1</code></p>
+</li>
+<li><p>isinf(x):����:�жϸ������͵�����Ƿ�Ϊ����������Ǹ��������.<br><code>&gt;&gt;&gt;math.isinf(6.66)</code><br><code>&gt;&gt;&gt;False</code></p>
+</li>
+<li><p>isnan(x):����:�жϸ������͵�����Ƿ�Ϊ����.<br><code>&gt;&gt;&gt;math.isnan(6.66)</code><br><code>&gt;&gt;&gt;False</code></p>
+</li>
+<li><p>ldexp(x, i):����:�ͺ���frexp(x)�����෴��ͬ��ʽ:x*2**i<br><code>&gt;&gt;&gt;math.ldexp(0.5,4)</code><br><code>&gt;&gt;&gt;8.0</code></p>
+</li>
+<li><p>modf(x):����:�������x��������С������.<br><code>&gt;&gt;&gt;math.modf(8)</code><br><code>&gt;&gt;&gt;(0.0,8.0)</code></p>
+</li>
+<li><p>trunc(x):����:��ȡ�������ݵ�С������.<br><code>&gt;&gt;&gt;math.trunc(6.66)</code><br><code>&gt;&gt;&gt;6</code></p>
+</li>
+<li><p>exp(x):����:ָ������,��ͬ��ʽe**x.<br><code>&gt;&gt;&gt;math.exp(5)</code><br><code>&gt;&gt;&gt;148.4131591025766</code></p>
+<p><code>&gt;&gt;&gt;math.exp(1e-5)-1</code><br><code>&gt;&gt;&gt;1.0000050000069649e-05</code></p>
+</li>
+<li><p>expm1(x):����:��exp(x)��ͬ���ڸú������м�1����,С�����ֵľ���Ҳ������.<br><code>&gt;&gt;&gt;math.expm1(5)</code><br><code>&gt;&gt;&gt;147.4131591025766</code></p>
+<p><code>&gt;&gt;&gt;math.expm1(1e-5)</code><br><code>&gt;&gt;&gt;1.0000050000069649e-05</code></p>
+</li>
+<li><p>log(x[, base]):����:ȡlog����.������ֻ��1��,��ôbase=e.<br><code>&gt;&gt;&gt;math.log(4)</code><br><code>&gt;&gt;&gt;1.3862943611198906</code></p>
+<p><code>&gt;&gt;&gt;math.log(4,2)</code><br><code>&gt;&gt;&gt;2.0</code></p>
+</li>
+<li>log1p(x):����:ȡlog����,��ͬ��1+x (base e).<br><code>&gt;&gt;&gt;math.log1p(4)</code><br><code>&gt;&gt;&gt;1.6094379124341003</code></li>
+<li>log10(x):����:ȡlog����,base=10.<br><code>&gt;&gt;&gt;math.log10(100)</code><br><code>&gt;&gt;&gt;2.0</code></li>
+<li>pow(x, y):����:������,��ͬ��ʽx**y.<br><code>&gt;&gt;&gt;math.pow(3,2)</code><br><code>&gt;&gt;&gt;9.0</code></li>
+<li>sqrt(x):����:��������.<br><code>&gt;&gt;&gt;math.sqrt(4)</code><br><code>&gt;&gt;&gt;2.0</code><h1 id="���A���"><a href="#���A���" class="headerlink" title="���Ǻ���"></a>���Ǻ���</h1></li>
+<li><p>acos(x):�����Һ���.y = arccos(x),x=[-1,1];</p>
+</li>
+<li><p>asin(x):�����Һ���.y=arcsin(x),x=[-1,1];</p>
+</li>
+<li><p>atan(x):�����к���.</p>
+</li>
+<li><p>atan2(y, x):����y/x�ķ����к���.</p>
+</li>
+<li><p>cos(x):���Һ���.</p>
+</li>
+<li><p>sin(x):���Һ���.</p>
+</li>
+<li><p>tan(x):���к���.</p>
+</li>
+<li><p>hypot(x, y):����ŷ�Ϸ���,��ͬ��ʽsqrt(x<em>x + y</em>y).</p>
+</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:951992762@qq.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 dongzixian<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
