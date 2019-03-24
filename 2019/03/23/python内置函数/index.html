@@ -13,6 +13,13 @@
     
 
     
+        <meta name="description" content="数字运算
+abs(x)求绝对值1、参数可以是整型，也可以是复数2、若参数是复数，则返回复数的模
+complex([real[, imag]])创建一个复数
+divmod(a, b)分别取商和余数注意：整型、浮点型都可以
+float([x])将一个字符串或数转换为浮点数。如果无参数将返回0.0
+int">
+    
 
     <!--Author-->
     
@@ -21,10 +28,17 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="dongzixian">
+        <meta property="og:title" content="python内置函数">
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="数字运算
+abs(x)求绝对值1、参数可以是整型，也可以是复数2、若参数是复数，则返回复数的模
+complex([real[, imag]])创建一个复数
+divmod(a, b)分别取商和余数注意：整型、浮点型都可以
+float([x])将一个字符串或数转换为浮点数。如果无参数将返回0.0
+int">
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +46,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -51,7 +65,7 @@
 
     <!-- Title -->
     
-    <title>dongzixian</title>
+    <title>python内置函数 - dongzixian</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -154,126 +168,104 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
 <header class="intro-header" style="background-image: url('https://raw.githubusercontent.com/dongzixian/dongzixian/master/timg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>dongzixian</h1>
-                    <hr class="small">
-                    <span class="subheading"></span>
+                <div class="post-heading">
+                    <h1>python内置函数</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-03-23
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/2019/03/24/python字符串方法/">
-        <h2 class="post-title">
-            python字符串方法
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-24
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/23/python内置函数/">
-        <h2 class="post-title">
-            python内置函数
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-23
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/23/math标准库 函数----python/">
-        <h2 class="post-title">
-            python下的math标准库
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-23
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/23/MarkDown部分知识点/">
-        <h2 class="post-title">
-            MarkDown部分知识点
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-23
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/23/Jupyter Notebook部分知识点/">
-        <h2 class="post-title">
-            Jupyter Notebook知识点
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-23
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/23/hello-world/">
-        <h2 class="post-title">
-            Hello World
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-23
-    </p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
 
-            <ul class="pager">
-    
-    
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="数字运算"><a href="#数字运算" class="headerlink" title="数字运算"></a>数字运算</h1><ul>
+<li>abs(x)<br>求绝对值<br>1、参数可以是整型，也可以是复数<br>2、若参数是复数，则返回复数的模</li>
+<li>complex([real[, imag]])<br>创建一个复数</li>
+<li>divmod(a, b)<br>分别取商和余数<br>注意：整型、浮点型都可以</li>
+<li>float([x])<br>将一个字符串或数转换为浮点数。如果无参数将返回0.0</li>
+<li>int([x[, base]])<br>将一个字符转换为int类型，base表示进制</li>
+<li>long([x[, base]])<br>将一个字符转换为long类型</li>
+<li>pow(x, y[, z])<br>返回x的y次幂</li>
+<li>range([start], stop[, step])<br>产生一个序列，默认从0开始</li>
+<li>round(x[, n])<br>四舍五入</li>
+<li>sum(iterable[, start])<br>对集合求和</li>
+<li>oct(x)<br>将一个数字转化为8进制</li>
+<li>hex(x)<br>将整数x转换为16进制字符串</li>
+<li>chr(i)<br>返回整数i对应的ASCII字符</li>
+<li>bin(x)<br>将整数x转换为二进制字符串</li>
+<li>bool([x])<br>将x转换为Boolean类型<h1 id="逻辑判断"><a href="#逻辑判断" class="headerlink" title="逻辑判断"></a>逻辑判断</h1></li>
+<li>all(iterable)<br>1、集合中的元素都为真的时候为真<br>2、特别的，若为空串返回为True</li>
+<li>any(iterable)<br>1、集合中的元素有一个为真的时候为真<br>2、特别的，若为空串返回为False</li>
+<li>cmp(x, y)<br>如果x &lt; y ,返回负数；x == y, 返回0；x &gt; y,返回正数</li>
 </ul>
+<h1 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h1><ul>
+<li>format(value [, format_spec])<br>格式化输出字符串<br>格式化的参数顺序从0开始，如“I am {0},I like {1}”</li>
+<li>max(iterable[, args…][key])<br>返回集合中的最大值</li>
+<li>min(iterable[, args…][key])<br>返回集合中的最小值</li>
+<li>dict([arg])<br>创建数据字典</li>
+<li>list([iterable])<br>将一个集合类转换为另外一个集合类</li>
+<li>str([object])<br>转换为string类型</li>
+<li>sorted(iterable[, cmp[, key[, reverse]]])<br>队集合排序</li>
+<li>tuple([iterable])<br>生成一个tuple类型</li>
+<li>dir([object])<br>1、不带参数时，返回当前范围内的变量、方法和定义的类型列表；<br>2、带参数时，返回参数的属性、方法列表。<br>3、如果参数包含方法<strong>dir</strong>()，该方法将被调用。当参数为实例时。<br>4、如果参数不包含<strong>dir</strong>()，该方法将最大限度地收集参数信息</li>
+<li>delattr(object, name)<br>删除object对象名为name的属性</li>
+<li>eval(expression [, globals [, locals]])<br>eval(expression [, globals [, locals]])</li>
+<li>globals()<br>返回一个描述当前全局符号表的字典</li>
+<li>hasattr(object, name)<br>判断对象object是否包含名为name的特性</li>
+<li>hash(object)<br>如果对象object为哈希表类型，返回对象object的哈希值</li>
+<li>id(object)<br>返回对象的唯一标识</li>
+<li>isinstance(object, classinfo)<br>判断object是否是class的实例</li>
+<li>issubclass(class, classinfo)<br>判断是否是子类</li>
+<li>len(s)<br>返回集合长度</li>
+<li>locals()<br>返回当前的变量列表</li>
+<li>object()<br>基类</li>
+<li>reduce(function, iterable[, initializer])<br>合并操作，从第一个开始是前两个参数，然后是前两个的结果与第三个合并进行处理，以此类推</li>
+<li>reload(module)<br>重新加载模块</li>
+<li>type(object)<br>返回该object的类型</li>
+<li>vars([object])<br>返回对象的变量，若无参数与dict()方法类似</li>
+<li>help()<br>帮助信息</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
-
+</article>
 
     <!-- Footer -->
     <hr>
