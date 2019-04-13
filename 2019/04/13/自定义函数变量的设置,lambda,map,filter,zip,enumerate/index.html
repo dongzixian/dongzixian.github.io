@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="自定义函数变量的设置一个星号*传入元组，且这个变量为可变变量两个星号后的那些参数被当做字典类型传递到函数中带有双星号的可变参数只能出现在参数列表的最后
+注意双星号是字典类型（字典形式要有键值对）**1234&amp;gt;&amp;gt;&amp;gt;def d(a,b=6,*c,**d):    print(&amp;quot">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="dongzixian">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="自定义函数变量的设置（*/**）,lambda匿名函数（map/filter/zip/enumerate）">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="自定义函数变量的设置一个星号*传入元组，且这个变量为可变变量两个星号后的那些参数被当做字典类型传递到函数中带有双星号的可变参数只能出现在参数列表的最后
+注意双星号是字典类型（字典形式要有键值对）**1234&amp;gt;&amp;gt;&amp;gt;def d(a,b=6,*c,**d):    print(&amp;quot">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="dongzixian">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://yoursite.comhttps://raw.githubusercontent.com/dongzixian/dongzixian/master/timg.jpg">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="http://yoursite.comhttps://raw.githubusercontent.com/dongzixian/dongzixian/master/timg.jpg">
+    
+
+    <!-- Title -->
+    
+    <title>自定义函数变量的设置（*/**）,lambda匿名函数（map/filter/zip/enumerate） - dongzixian</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tegs
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('https://raw.githubusercontent.com/dongzixian/dongzixian/master/timg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>自定义函数变量的设置（*/**）,lambda匿名函数（map/filter/zip/enumerate）</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-04-13
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="自定义函数变量的设置"><a href="#自定义函数变量的设置" class="headerlink" title="自定义函数变量的设置"></a>自定义函数变量的设置</h1><p><strong>一个星号</strong><br>*传入<code>元组</code>，且这个变量为可变变量<br><strong>两个星号</strong><br><strong>后的那些参数被当做<code>字典</code>类型传递到函数中<br>带有双星号的可变参数只能出现在参数列表的最后
+</strong>注意双星号是字典类型（字典形式要有键值对）**<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def d(a,b=6,*c,**d):</span><br><span class="line">    print(&quot;a=&quot;,a,&quot;b=&quot;,b,&quot;c=&quot;,c,&quot;d=&quot;,d)</span><br><span class="line">&gt;&gt;&gt;d(1,2,3,4)</span><br><span class="line">a= 1 b= 2 c= (3, 4) d= &#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def d(a,b=6,*c,**d):</span><br><span class="line">    print(&quot;a=&quot;,a,&quot;b=&quot;,b,&quot;c=&quot;,c,&quot;d=&quot;,d)</span><br><span class="line">&gt;&gt;&gt;d(a=1,b=2,c=3)</span><br><span class="line">a= 1 b= 2 c= () d= &#123;&apos;c&apos;: 3&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>不能重复赋值</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#对b二次赋值报错</span><br><span class="line">&gt;&gt;&gt;def d(a,b=6,*c,**d):</span><br><span class="line">    print(&quot;a=&quot;,a,&quot;b=&quot;,b,&quot;c=&quot;,c,&quot;d=&quot;,d)</span><br><span class="line">&gt;&gt;&gt;d(1,2,3,4,b=1)</span><br><span class="line">TypeError: d() got multiple values for argument &apos;b&apos;</span><br></pre></td></tr></table></figure>
+<p><strong>强制命名参数</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def aaa(*,a,b,c):</span><br><span class="line">    return a+b+c</span><br><span class="line">&gt;&gt;&gt;aaa(a=1,b=1,c=1)</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+<p><strong>强制命名必须用命名来传递值</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def aaa(*,a,b,c):</span><br><span class="line">    return a+b+c</span><br><span class="line">&gt;&gt;&gt;aaa(a=1,1,1)</span><br><span class="line">SyntaxError: positional argument follows keyword argument#报错</span><br></pre></td></tr></table></figure>
+<h1 id="lambda匿名函数"><a href="#lambda匿名函数" class="headerlink" title="lambda匿名函数"></a>lambda匿名函数</h1><p><strong>函数名 = lambda 参数：表达式</strong></p>
+<p><code>等价于</code></p>
+<p><strong>def 函数名（参数）：</strong><br>    <strong>函数体</strong><br>   <strong>return 返回值</strong><br>   <code>!!!   lambda不允许包含复合语句，只可以包含一个表达式</code></p>
+<h3 id="map函数"><a href="#map函数" class="headerlink" title="map函数"></a>map函数</h3><p> map（function（函数），iterable,…（一个或多个序列））</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def square(x):</span><br><span class="line">    return x**2</span><br><span class="line">&gt;&gt;&gt;map(square,[1,2,3,4,5])</span><br><span class="line"># 生成迭代器</span><br><span class="line">&lt;map at 0x2c5f1526860&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>需要转换</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;def square(x):</span><br><span class="line">    return x**2</span><br><span class="line">&gt;&gt;&gt;list(map(square,[1,2,3,4,5]))</span><br><span class="line">[1, 4, 9, 16, 25]</span><br></pre></td></tr></table></figure>
+<p><strong>结合lambda</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;map(lambda x:x**2,[1,2,3,4,5])</span><br><span class="line">&lt;map at 0x2c5f1526cf8&gt;</span><br><span class="line">&gt;&gt;&gt;list(map(lambda x:x**2,[1,2,3,4,5]))</span><br><span class="line">[1, 4, 9, 16, 25]</span><br></pre></td></tr></table></figure>
+<h3 id="filter函数"><a href="#filter函数" class="headerlink" title="filter函数"></a>filter函数</h3><p>filter(function(判断函数)，iterable(可迭代对象))<br><code>留下True,过滤False</code><br><strong>判断函数</strong>：只能接受一个参数，且返回值是True或False<br><strong>可迭代对象</strong>：直接调filter函数只返回迭代器，需要用list（）或其他函数来转换，但在for循环中可以直接使用</p>
+<h3 id="zip函数"><a href="#zip函数" class="headerlink" title="zip函数"></a>zip函数</h3><p>zip(seq[,seq,…])<br><strong>可把两个或多个序列中的相应项合并在一起</strong><br><strong>以元组的格式返回它们</strong><br><strong>在处理完最短序列中的所有项后停止</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;a = [1,2,3]</span><br><span class="line">&gt;&gt;&gt;b = [4,5,6]</span><br><span class="line">&gt;&gt;&gt;list(zip(a,b))</span><br><span class="line">#返回元组列表</span><br><span class="line">[(1, 4), (2, 5), (3, 6)]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#返回字典类型</span><br><span class="line">&gt;&gt;&gt;dict(zip([1,2],[3,4]))</span><br><span class="line">&#123;1: 3, 2: 4&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#zip(*...)为还原</span><br><span class="line">&gt;&gt;&gt;a = [1,2,3]</span><br><span class="line">&gt;&gt;&gt;b = [4,5,6]</span><br><span class="line">&gt;&gt;&gt;list(zip(*zip(a,b)))</span><br><span class="line">[(1, 2, 3), (4, 5, 6)]</span><br></pre></td></tr></table></figure>
+<h3 id="enumerate函数"><a href="#enumerate函数" class="headerlink" title="enumerate函数"></a>enumerate函数</h3><p><strong>用于将一个可遍历的数据编号</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;s = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;]</span><br><span class="line">&gt;&gt;&gt;list(enumerate(s))</span><br><span class="line">#默认从0开始</span><br><span class="line">[(0, &apos;a&apos;), (1, &apos;b&apos;), (2, &apos;c&apos;), (3, &apos;d&apos;)]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;list(enumerate(s,start = 1))</span><br><span class="line">#可以设定从1或其他数字开始</span><br><span class="line">[(1, &apos;a&apos;), (2, &apos;b&apos;), (3, &apos;c&apos;), (4, &apos;d&apos;)]</span><br></pre></td></tr></table></figure>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:951992762@qq.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 dongzixian<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
